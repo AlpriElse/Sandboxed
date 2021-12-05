@@ -1,0 +1,10 @@
+{
+  "name": "webpack-dynamic-outputs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "glob": "^7.2.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}

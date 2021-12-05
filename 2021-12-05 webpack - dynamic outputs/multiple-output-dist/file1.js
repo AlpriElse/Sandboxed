@@ -1,0 +1,1 @@
+(()=>{"use strict";alert("i am file1.js"),console.log("message")})();
