@@ -1,0 +1,22 @@
+{
+  "name": "http-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-component": "esbuild components/SomeComponent.jsx --bundle --outfile=out/SomeComponent.js",
+    "build-component-provider": "esbuild componentProvider.js --platform=node --bundle --outfile=out/componentProvider.js",
+    "start-component-provider": "node ./out/componentProvider.js",
+    "build-renderer": "esbuild renderer.jsx --bundle --platform=node --outfile=out/renderer.js",
+    "start-renderer": "node --experimental-loader ./http-loader.mjs out/renderer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.14.11",
+    "express": "^4.17.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
