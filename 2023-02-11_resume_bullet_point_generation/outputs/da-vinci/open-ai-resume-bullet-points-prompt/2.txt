@@ -1,0 +1,15 @@
+---
+duration: 1.908588171005249
+---
+ Created a High Performance Multiple Modeling Toolchain and Cloud Bot Framework to massively improve the speed and quality performance of our Java application. The System Stacker Error Avoidance Based Modeling, a secondary ML model, had a 300 x 300 task-space reduction from when it was built with PyTorch and StackedAn ostensibly meant for a high performance problem. Using missing nodes, we were able to calibrate historical errors to a 3s magnitude reduction of 50% and essentially eliminate the need for missing model nodes
+- Played a central role in developing a high performance desktop feature set with performance measures and user feedback
+- Completely redesigned and re-architected MAV's Java application/HTML look/finish archive and stylesheets to increase its performance and reliability
+- Made massive changes to MAV's entire platform changelist and feature set including the addition of POLLING and SMBIOS changes.
+- Made several runtime improvements to fix memory leaks
+- Implemented a codemd task that helps to prevent code deployment errors
+- Provided consistent performance levels throughout MAV's platform changes
+- Really benefited from the lambda/mode functionalities added to MAV to reduce runtime memory use when MDing, also reducing platform and memory usage.
+- StackedAn stack that made our Java application accessible to others and being hosted in GitHub
+- Recently, combined our two existing Python proxies, improved performance, and reduced runtime memory usage by 50%
+
+Your hiring_bul

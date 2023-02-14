@@ -1,0 +1,21 @@
+---
+duration: 2.343798875808716
+---
+ Pulled 10,000 Model Analyses from over 700 datasets and merged with 2.5 million LOC data that can be vetted by hundreds of libraries.
+- Have deep learning focus in the areas of data science, network modeling and machine learning, command and control systems, geo information mining, and joint operations with Paralem AI.
+- Support issues-hot-fixes for systems that have been deployed for self-driving cars.
+- Players with a deep understanding of architectural and operating principles common in machine learning, data science, and machine learning as applied to autonomous vehicles.
+- Manage external monolithic data centers that have known performance dips during past node grabs.
+"
+
+- At OpenAI, we will use our client deployment matrix to constantly assess metrics, understand performance bottlenecks, identify issues and apply schedule enhancements to fix issues and ensure continued operational accuracy.
+- They will have a strong understanding of server-side computation vs. client-side computation specifically V9.9.1 server-side code based on node sizes and ecosystem agreements.
+- Test platform support the best open source and commercial hardware available with early reporting and debugging information.
+"
+- At OpenAI, we are proud to showcase our own brands to investors and advertisers, and proud to work closely with other large player companies to deliver innovative, state-of-the-art hardware for our clients.
+"
+- Visualised offline to server traffic
+
+" 
+
+"

@@ -1,0 +1,50 @@
+---
+duration: 15.934434652328491---
+You are a technical recruiter looking to hire highly qualified Software Engineers.
+
+EXAMPLE_RESUME_BULLET_POINTS="
+
+- Scripted codemod task with jscodeshift to resolve reliability issues regarding improper usage of Sentry’s Raven client, patching 90+ codebases to surface missing exception stack traces and properly group error events in Sentry.
+- Utilized Webpack and Rollup to repackage, upgrade and patch multiple npm dependencies used by front-end apps and libraries, supporting key performance initiative to migrate to React18 and fulfilling new npm package requests.
+- Implemented caching strategy in Java Dropwizard GraphQL service proxyingNew Relic endpoints, decreasing average latency of internal front end
+- JavaScript error and monitoring observability app initial page loads by five seconds.
+- Captured page reload metrics across all apps with internal metrics and user monitoring
+- JavaScript libraries and SLA ingestion Dropwizard service to pinpoint areas with reliability issues by analyzing Amazon S3 data in Athena
+  "
+
+EXAMPLE_RESUME_BULLET_POINTS contains resume bullet points for a strong software engineering candidate you've hired in the past.
+
+JOB_DESCRIPTION="
+The Language team at OpenAI is a diverse group of researchers and engineers, all committed to developing AI that can understand and work with language across tasks and domains. As a member of this team, you will be part of an organization that values interdisciplinary respect, intentional transparency, high standards for communication, and continuous learning.
+
+About the role
+As a Software Engineer on the Language team at OpenAI, you will play an integral role in advancing the state of the art in natural language processing and artificial intelligence. Your work will involve designing and implementing scalable systems to collect, analyze, and process data at massive scale.
+
+- Specifically, your responsibilities as a Software Engineer on the Language team will include:
+- Developing software to collect and manage data from a variety of sources
+- Designing and implementing scalable systems that can handle massive, internet-scale data volumes
+- Collaborating with a multidisciplinary team to ensure that your work aligns with larger research goals
+  About OpenAI
+
+OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
+
+At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.
+"
+
+As a technical recruiter, you are now looking to hire a Software Engineer that matches the skills needed for JOB_DESCRIPTION.
+
+Some conrete examples of bullet points I would expect on a strong hire candidate for this position would be:
+- Designed and implemented scalable and efficient model inference pipelines using TensorFlow, PyTorch, and Caffe, resulting in reduced inference latency by 30%.
+- Compacted, distributed database services with a minimum required API and a built-in TensorFlow model.
+
+- Deployed a self-service, self-hosted Docker platform.
+
+- Deployed the most robust database system with custom API.
+
+- Covered both deep domain and large database workloads for rapid performance.
+
+- Developed a self-service cloud for business use.
+
+- Generated the most scalable solution for complex problem solving tasks.
+
+- Consistently, tested and validated on Google Cloud Infrastructure with

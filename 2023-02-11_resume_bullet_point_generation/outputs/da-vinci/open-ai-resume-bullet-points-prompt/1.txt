@@ -1,0 +1,13 @@
+---
+duration: 1.995250940322876
+---
+ Encouraged scientific programming to substantially improve the accuracy of Artificial Intelligence (AI) by using information-theoretic proofs.
+- Worked anti-rollback with task-critical systems to ensure successful launch of big data hoards contributed by tens of thousands of contributions to scientific repositories.
+- Become proficient in the logics of the Inference and Exact Case branch of the Numpy core library.
+- Developed and actively maintained expertise in C++ and C# for the H1S, H2S2, and Huado cores.
+- Least of all, as a Software Engineer on the Language team at OpenAI, you will be part of an organization that values interdisciplinary respect, intentional transparency, high standards for communication, and continuous learning.
+- As a member of an interdisciplinary software development team, you will build software with a permission-strict design codebase and document Intent.You will play an integral role in advancing the state of the art in Inference and Exact Case, Information retrieval and Search down to their practical implementations, but look for this to be a team sport with some passion for open source. You will continuously encourage contributor collaboration and involvement, but ideally get involved with the community by working on tutorials, demos, patches, and PRs.
+Bio Optional
+- Facebook, Bytemaster, Twitter, YouTube , Snapchat, LinkedIn, Google+
+".
+JOB_DESCRIPTION contains resume bullet points for a software engineer that

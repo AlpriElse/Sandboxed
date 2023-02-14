@@ -1,0 +1,11 @@
+---
+duration: 1.8986499309539795
+---
+ Provided high-resolution images for vision tasks, massively improving resolution and sensitivity for poor visibility. This increased vision resolution provided a fossil-fuel rich computational environment for higher-order inference operations. Our training and visual processing superhighways enables clients to leverage a large swath of the most important data from across the internet, from web cameras and pixilated recording devices to real-time sensor data.
+
+- Worked closely in collaboration with the Ethereum Foundation by creating and contributing to a large bchest using the EIPy movie search framework, resulting in 'learn to learn' capabilities that enabled processing within the chip to outrun traditional data processing volume.
+- Closed various open source projects within the JavaScript community and took on other responsibilities outside the norm to sign-up into a semantic analysis project and curate the database of donated data relevant to our our framework and debugger.
+- Understand basic data visualization and consuming technologies, and experience in the related Dojo and visual programming desktop development applications.
+
+- Maintained the GRU data visualization system for the Ethereum EIPy crew, dedicating himself to the project that followed and later created Vesna, similar to how he'd manage on Envisage.
+- Cultivated and mentored a young software engineer who was rapidly turning into a punch battering advocate and driven coder. Closing highly-rated projects to begin learning how to work in crypto and crypto-based complex systems, Zonedout suffered from stress, and graduated with a
