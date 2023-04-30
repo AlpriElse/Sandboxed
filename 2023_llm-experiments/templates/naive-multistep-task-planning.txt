@@ -1,0 +1,194 @@
+{% raw %}
+# Response format
+Responses should be in the following JSON format:
+<!-- RESPONSE_START -->
+[
+  {
+    "tool": <TOOL_NAME>,
+    "<PARAMETER1>": <FIRST PARAMETER OF TOOL>,
+    "<PARAMETER2>": <SECOND PARAMETER OF TOOL>
+  }
+]
+<!-- RESPONSE_END -->
+
+The following is a "Tool Intent Definition". This describes what tool should be used to answer a question.
+```
+{
+  "tool": <TOOL_NAME>,
+  "<PARAMETER1>": <FIRST PARAMETER OF TOOL>,
+  "<PARAMETER2>": <SECOND PARAMETER OF TOOL>
+}
+```
+
+# Available Tools
+
+## GOOGLE
+tool_name: `GOOGLE`
+description: Searches Google given a query and returns results in a Python List
+parameters: `query`
+returns: 
+  - `urls`, a Python List eg. ['url1', 'url2', 'url3']
+
+### Examples
+q: Search how to write a novel
+a: 
+<!-- RESPONSE_START -->
+[
+  {
+    "tool": "GOOGLE",
+    "query": "how to write a novel"
+  }
+]
+<!-- RESPONSE_END -->
+
+q: Lookup how to ride a bike
+a: 
+<!-- RESPONSE_START -->
+[
+  {
+    "tool": "GOOGLE",
+    "query": "how to write a novel"
+  }
+]
+<!-- RESPONSE_END -->
+
+### Example Tool Output
+```
+{
+  'urls': ['some url 1', 'some url 2', 'some url 3']
+}
+```
+
+## FILEWRITER
+tool_name: `FILEWRITER`
+description: Writes content into a file on the local filesystem given a file path
+parameters: `file_path`, `contents`
+returns: 
+  - `success`, a Python True or False value depending on if the write to the file suceeded
+
+### Examples
+q: Write "hello world" into "hello.txt"
+a:
+<!-- RESPONSE_START -->
+[
+  {
+    "tool": "FILEWRITER",
+    "file_path": "hello.txt",
+    "contents": "hello world"
+  }
+]
+<!-- RESPONSE_END -->
+
+### Example Tool Output
+```
+{
+  'success': True
+}
+```
+
+## FETCH_URL
+tool_name: `FETCH_URL`
+description: Fetches a url and returns contents of the webpage in Markdown format
+parameters: `url`
+returns: 
+  - `output`, a Python String in markdown format
+
+### Examples
+q: Fetch www.alprielse.xyz
+a:
+<!-- RESPONSE_START -->
+[
+  {
+    "tool": "FETCH_URL",
+    "url": "www.alprielse.xyz"
+  }
+]
+<!-- RESPONSE_END -->
+
+### Example Tool Output
+```
+{
+  'output': 'Some markdown formatted string'
+}
+```
+
+
+## EXECUTE_PYTHON_FILE
+tool_name: `EXECUTE_PYTHON_FILE`
+description: Given a file path, we execute a Python file
+parameters: `file_path`
+returns: 
+  - `success`, a Python True or False value if the Tool was able to successfully run the script
+  - `output`, the Standard Output (stdout) of running the Python script
+
+### Examples
+q: Execute test.py
+a:
+<!-- RESPONSE_START -->
+[
+  {
+    "tool": "EXECUTE_PYTHON_FILE",
+    "file_path": "test.py"
+  }
+]
+<!-- RESPONSE_END -->
+
+
+
+# Tool Chaining
+Multiple "Tool Intent Definitions" can be chained together to enable using multiple tools.
+
+The output of previous tool executions can be references with the `PREVIOUS` keyword.
+
+## Examples
+q: Write a hello world function in python and execute it
+a:
+<!-- RESPONSE_START -->
+[
+  {
+    "tool": "FILEWRITER",
+    "file_path": "test.py",
+    "contents": "print('hello world!')"
+  },
+  {
+    "tool": "EXECUTE_PYTHON_FILE",
+    "file_path": "test.py"
+  }
+]
+<!-- RESPONSE_END -->
+
+q: Search on google for 'What is AutoGPT` and write the urls to a txt file
+a:
+<!-- RESPONSE_START -->
+[
+  {
+    "tool": "GOOGLE",
+    "query": "What is AutoGPT"
+  },
+  {
+    "tool": "FILEWRITER",
+    "file_path": "test.py",
+    "contents": "{{ previous_result['urls'] }}"
+  }
+]
+<!-- RESPONSE_END -->
+
+q: Fetch the contents of www.google.com and write it to a markdown file
+a:
+<!-- RESPONSE_START -->
+[
+  {
+    "tool": "FETCH_URL",
+    "url": "www.google.com"
+  },
+  {
+    "tool": "FILEWRITER",
+    "file_path": "temp.md",
+    "contents": "{{ previous_result['output'] }}"
+  }
+]
+<!-- RESPONSE_END -->
+{% endraw `%}
+# Evaluate this
+q: {{ message }}
+a: 
