@@ -1,0 +1,87 @@
+[
+    {
+        "context": "Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. It is seen as a part of artificial intelligence. Machine learning algorithms build a model based on sample data, known as training data, in order to make predictions or decisions without being explicitly programmed to do so. Machine learning algorithms are used in a wide variety of applications, such as in medicine, email filtering, speech recognition, agriculture, and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks. \nA subset of machine learning is closely related to computational statistics, which focuses on making predictions using computers, but not all machine learning is statistical learning. The study of mathematical optimization delivers methods, theory and application domains to the field of machine learning. Data mining is a related field of study, focusing on exploratory data analysis through unsupervised learning. Some implementations of machine learning use data and neural networks in a way that mimics the working of a biological brain.  In its application across business problems, machine learning is also referred to as predictive analytics.",
+        "statements": [
+            {
+                "source": "What is a field of inquiry devoted to understanding and building methods that 'learn'?",
+                "target": "Machine learning"
+            },
+            {
+                "source": "Tell me about Machine learning",
+                "target": "Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn'"
+            },
+            {
+                "source": "What is the study of the attacks on machine learning algorithms?",
+                "target": "I don't have data on that"
+            }
+        ]
+    },
+    {
+        "context": "In machine learning, the perceptron (or McCulloch-Pitts neuron) is an algorithm for supervised learning of binary classifiers.  A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class.  It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector.",
+        "statements": [
+            {
+                "source": "What is a type of linear classifier?",
+                "target": "binary classifier"
+            },
+            {
+                "source": "Tell me about Perceptron",
+                "target": "an algorithm for supervised learning of binary classifiers"
+            },
+            {
+                "source": "Tell me about Machine learning",
+                "target": "I don't have data on that"
+            }
+        ]
+    },
+    {
+        "context": "Adversarial machine learning is the study of the attacks on machine learning algorithms, and of the defenses against such attacks. A recent survey exposes the fact that practitioners report a dire need for better protecting machine learning systems in industrial applications.",
+        "statements": [
+            {
+                "source": "What is the study of the attacks on machine learning algorithms?",
+                "target": "Adversarial machine learning"
+            },
+            {
+                "source": "Provide a quick summary on Adversarial machine learning",
+                "target": "Adversarial machine learning"
+            },
+            {
+                "source": "What is a field of inquiry devoted to understanding and building methods that 'learn'?",
+                "target": "I don't have data on that"
+            }
+        ]
+    },
+    {
+        "context": "In machine learning, a common task is the study and construction of algorithms that can learn from and make predictions on data. Such algorithms function by making data-driven predictions or decisions, through building a mathematical model from input data. These input data used to build the model are usually divided in multiple data sets. In particular, three data sets are commonly used in different stages of the creation of the model: training, validation and test sets.",
+        "statements": [
+            {
+                "source": "What is the common task in machine learning?",
+                "target": "the study and construction of algorithms that can learn from and make predictions on data"
+            },
+            {
+                "source": "Give an explanation on Training, validation, and test data sets",
+                "target": "Training, validation and test data sets are used to build a mathematical model from input data."
+            },
+            {
+                "source": "What is a field of inquiry devoted to understanding and building methods that 'learn'?",
+                "target": "I don't have data on that"
+            }
+        ]
+    },
+    {
+        "context": "Association rule learning is a rule-based machine learning method for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using some measures of interestingness. In any given transaction with a variety of items, association rules are meant to discover the rules that determine how or why certain items are connected.",
+        "statements": [
+            {
+                "source": "What is the purpose of association rule learning?",
+                "target": "to identify strong rules discovered in databases using some measures of interestingness"
+            },
+            {
+                "source": "Give an explanation on Association rule learning",
+                "target": "Association rule learning is a rule-based machine learning method for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using some measures of interestingness. In any given transaction with a variety of items, association rules are meant to discover the rules that determine how or why certain items are connected."
+            },
+            {
+                "source": "What is a type of linear classifier?",
+                "target": "I don't have data on that"
+            }
+        ]
+    }
+]
