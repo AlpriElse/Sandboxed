@@ -1,0 +1,36 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Clearbit Discovery API",
+    "description": "Takes a clearbit `query` and returns a response",
+    "version": "v1.0.0"
+  },
+  "servers": [
+    {
+      "url": "<Lambda Function URL>"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "Gets company information that satisfy the query provided. This company information is provided by Clearbit.",
+        "operationId": "DiscoverCompanies",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "The Clearbit query to filter companies by.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "deprecated": false
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}

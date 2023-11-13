@@ -1,0 +1,1 @@
+aws lambda invoke --function-name test-gpt-clearbit-proxy output.txt
