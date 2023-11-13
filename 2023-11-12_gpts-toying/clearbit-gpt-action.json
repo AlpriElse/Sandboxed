@@ -1,0 +1,141 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Clearbit API Integration",
+    "description": "API for accessing various Clearbit services, including personal and company information retrieval, company discovery, and prospecting.",
+    "version": "v1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://person.clearbit.com"
+    },
+    {
+      "url": "https://company.clearbit.com"
+    },
+    {
+      "url": "https://logo.clearbit.com"
+    }
+  ],
+  "paths": {
+    "/v2/combined/find": {
+      "get": {
+        "description": "Finds combined information of a person based on email.",
+        "operationId": "FindCombinedInfo",
+        "servers": [{ "url": "https://person.clearbit.com" }],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v2/companies/find": {
+      "get": {
+        "description": "Looks up a company by domain name. Returns a 404 if the company is not found, and a 422 for invalid domain names.",
+        "operationId": "FindCompanyByDomain",
+        "servers": [{ "url": "https://company.clearbit.com" }],
+        "parameters": [
+          {
+            "name": "domain",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/companies/search": {
+      "get": {
+        "description": "Searches for companies based on specific criteria like funding or technology used.",
+        "operationId": "SearchCompanies",
+        "servers": [{ "url": "https://company.clearbit.com" }],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/people/search": {
+      "get": {
+        "description": "Returns an array of people who work at a specific company.",
+        "operationId": "SearchPeople",
+        "servers": [{ "url": "https://person.clearbit.com" }],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v2/people/search": {
+      "get": {
+        "description": "Returns an array of people matching certain search parameters.",
+        "operationId": "SearchPeopleV2",
+        "servers": [{ "url": "https://person.clearbit.com" }],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/companies/find?ip=:ip": {
+      "get": {
+        "description": "Returns the company domain and information associated with a given IP address. Flags IPs belonging to ISPs or returns 404 if no match.",
+        "operationId": "FindCompanyByIP",
+        "servers": [{ "url": "https://company.clearbit.com" }],
+        "parameters": [
+          {
+            "name": "ip",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/domains/find?name=:name": {
+      "get": {
+        "description": "Converts the exact name of a company to a website domain and a logo.",
+        "operationId": "NameToDomain",
+        "servers": [{ "url": "https://company.clearbit.com" }],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
